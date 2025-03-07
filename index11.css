@@ -1,0 +1,226 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo h1 {
+    color: #00ffcc;
+    font-size: 30px;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+header nav ul li a.active {
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+header button {
+    background-color: #00ffcc;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+header button:hover {
+    background-color: #00b38d;
+}
+
+/* Profile Section Styles */
+.profile-section {
+    padding: 40px 20px;
+    background-color: #e6e6e6;
+}
+
+.profile-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.user-details h3, .user-details h4 {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    color: #333;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode button {
+    background-color: #00ffcc;
+}
+
+body.dark-mode .profile-section {
+    background-color: #333;
+}
+
+body.dark-mode .user-details {
+    color: #f2f2f2;
+}
+
+body.dark-mode h2, body.dark-mode h3 {
+    color: #00ffcc;
+}
+
+body.dark-mode a {
+    color: #00ffcc;
+}
+
+body.dark-mode .active {
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+body.dark-mode ul li {
+    color: #f2f2f2;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo h1 {
+        font-size: 24px;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .user-details h3 {
+        font-size: 18px;
+    }
+
+    .user-details h4 {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .profile-section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .user-details h3 {
+        font-size: 16px;
+    }
+
+    .user-details h4 {
+        font-size: 14px;
+    }
+}
